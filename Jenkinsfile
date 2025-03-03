@@ -1,15 +1,19 @@
 pipeline {
     agent any 
     stages {
-        stage(name: 'Checkout Code') {
+        stage(name: 'Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/rajan0917/test1.git' 
             }
         }
-        stage(name: 'Build Docker Image with Ansible') {
+        stage(name: 'Run Ansible Playbook') {
             steps {
-                sh 'ansible-playbook -i inventory ping.yml'
+                ansiblePlaybook(
+                    inventory: 'inventory',
+                    playbook: 'ping.yaml', 
+                    
+                ) 
             }
         }
-     }
+    }
 }
