@@ -11,7 +11,8 @@ pipeline {
                 ansiblePlaybook(
                     
                     inventory: 'inventory',
-                    playbook: 'ping.yaml', 
+                    playbook: 'ping.yaml',
+                    installation: "ansible"
                     
                 ) 
             }
