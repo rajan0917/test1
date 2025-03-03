@@ -9,7 +9,7 @@ pipeline {
         stage('Run Ansible Playbook') {
             steps {
                 ansiblePlaybook(
-                    sh "chmod +x -R ${env.WORKSPACE}"
+                    
                     inventory: 'inventory',
                     playbook: 'ping.yaml',
                     installation: "ansible-playbook"
