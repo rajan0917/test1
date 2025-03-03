@@ -9,6 +9,7 @@ pipeline {
         stage(name: 'Run Ansible Playbook') {
             steps {
                 ansiblePlaybook(
+                    
                     inventory: 'inventory',
                     playbook: 'ping.yaml', 
                     
@@ -16,4 +17,3 @@ pipeline {
             }
         }
     }
-}
