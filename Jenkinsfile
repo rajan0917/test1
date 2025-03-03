@@ -8,7 +8,7 @@ pipeline {
         }
         stage(name: 'Build Docker Image with Ansible') {
             steps {
-                sh 'ansible-playbook -i inventory.yml build_docker.yml'
+                sh 'ansible-playbook -i inventory ping.yml'
             }
         }
      }
