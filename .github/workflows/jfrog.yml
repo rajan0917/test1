@@ -37,7 +37,7 @@ jobs:
 
       # Setup JFrog CLI for SCA and Container scans
       - name: Setup JFrog CLI
-        uses: jfrog/setup-jfrog-cli@v1
+        uses: jfrog/setup-jfrog-cli@v4.8.1
         with:
           # Use OIDC for authentication (recommended)
           oidc-provider-name: ${{ secrets.JFROG_OIDC_PROVIDER_NAME }}
