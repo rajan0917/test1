@@ -51,7 +51,7 @@ jobs:
       # This can be run on source code or after build
       - name: Run JFrog Xray SCA scan on source
         run: |
-          jf c add
+          jf c add my-jfrog-server 
           jf scan . 
 
       # 3. Build Artifact (assuming a simple app, e.g., Node.js)
