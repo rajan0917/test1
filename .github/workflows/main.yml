@@ -67,8 +67,8 @@ jobs:
       # 4. Create docker image
       - name: Build Docker image
         run: |
-   #       docker build -t ${{ secrets.JFROG_REGISTRY_URL }}/${{ vars.JF_PROJECT }}/my-app:${{ github.run_number }} .
-            docker build -t ${{ secrets.JFROG_REGISTRY_URL }}/${{ vars.JF_PROJECT }}/my-app .
+           docker build -t ${{ secrets.JFROG_REGISTRY_URL }}/${{ vars.JF_PROJECT }}/my-app:${{ github.run_number }} .
+            
       # 5. Push image to jfrog
       - name: Log in to JFrog Artifactory Docker Registry
         run: |
