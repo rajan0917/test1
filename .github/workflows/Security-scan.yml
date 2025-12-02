@@ -28,12 +28,12 @@ jobs:
 
       # 2.b SAST scan by CodeQL
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
+        uses: github/codeql-action/init@v4
         with:
            languages: javascript-typescript # Specify relevant languages
            # queries: security-extended, security-and-quality
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
+        uses: github/codeql-action/analyze@v4
 
       # Setup JFrog CLI for SCA and Container scans
       - name: Setup JFrog CLI
