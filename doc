@@ -1,0 +1,57 @@
+
+1.
+
+Understanding existing AWS Org / Landing Zone
+
+Explaining account structure
+
+Security, governance & networking overview
+
+Diagrams
+
+Reviews with stakeholders
+
+1️. Overview & Architecture
+2. AWS Organizations Setup – 3 SP
+
+Includes
+
+2.a Org structure explanation
+
+2.b Root, OUs, and accounts
+
+3.b Management vs Member accounts
+
+3. Account Strategy Documentation – 3 SP
+
+Includes
+
+3.a Dev / QA / Prod / Shared / Security accounts
+
+3.b Account naming standards
+
+3.c Account creation flow
+
+4. Identity & Access Management (IAM)
+
+4.a IAM Identity Center (SSO)
+
+4.b Permission sets
+
+4.c Cross-account access
+
+4.d Role assumptions
+
+5. Networking Architecture
+5.a Centralized VPC design
+
+5.b Hub-and-spoke model
+
+5.c Transit Gateway / VPC Peering
+
+5.c DNS strategy
+
+
+
+
+
